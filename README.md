@@ -7,6 +7,16 @@ while seeing each input image with ASCII art.
 
 The network is currently a 784x50x10 neural network. Each layer of the network has its own weights and biases arrays to facilitate calculations and to make adjustments easier while training.
 
+User Menu:
+The user menu in the program allows for the following options:
+1) Train the network (If the network has already been trained or the weights and biases were uploaded from a file, the user can continue training the network)
+2) Upload weights and biases from a file
+3) Test the network with the MNIST Testing data set
+4) Test the network with the MNIST Training data set
+5) See how the network categorized every image in the data set
+6) See all of the network's misclassified images in the data set
+7) Save the weights and biases to a .txt file
+
 Training:
 To train the network, Stochastic Gradient Descent is utilized, and the training data is broken into mini-batches to make this process quicker. The size of each mini-batch is 10 images,
 and the network is trained on 30 epochs of 6000 minibatches, totalling 60,000 images. After each mini-batch, the weight and bias gradients are then applied to the existing weights and biases of each neuron in the network. 
